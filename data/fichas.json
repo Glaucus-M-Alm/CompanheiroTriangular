@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "nome": "Jorge",
+        "classe": "Atleta",
+        "nivel": 5,
+        "atributos": {
+            "intelig\u00eancia": 3,
+            "vigor": 5,
+            "carisma": -4,
+            "destreza": 5,
+            "apar\u00eancia": 0,
+            "for\u00e7a": 0
+        },
+        "habilidades": [
+            "Besta Enjaulada"
+        ]
+    }
+]

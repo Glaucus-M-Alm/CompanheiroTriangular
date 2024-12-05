@@ -1,18 +1,34 @@
 [
     {
-        "nome": "Jorge",
-        "classe": "Atleta",
-        "nivel": 5,
+        "nome": "a",
+        "classe": "a",
+        "nivel": 1,
         "atributos": {
-            "intelig\u00eancia": 3,
-            "vigor": 5,
-            "carisma": -4,
-            "destreza": 5,
+            "intelig\u00eancia": 0,
+            "vigor": 0,
+            "carisma": 0,
+            "destreza": 0,
             "apar\u00eancia": 0,
             "for\u00e7a": 0
         },
         "habilidades": [
-            "Besta Enjaulada"
+            "a"
+        ]
+    },
+    {
+        "nome": "jorge",
+        "classe": "lenhador",
+        "nivel": 1,
+        "atributos": {
+            "intelig\u00eancia": -4,
+            "vigor": 5,
+            "carisma": 0,
+            "destreza": 0,
+            "apar\u00eancia": 0,
+            "for\u00e7a": 5
+        },
+        "habilidades": [
+            ""
         ]
     }
 ]

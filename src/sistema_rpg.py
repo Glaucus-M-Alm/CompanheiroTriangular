@@ -12,26 +12,41 @@ class SistemaRPG:
 
         def atualizar_lista_fichas():
             fichas = self.database.listar_fichas()
-            lista.controls.clear()
+            lista.controls.clear()  # Limpa a lista antes de atualizar
             for ficha in fichas:
+                # Organize as informações de forma mais direta
+                ficha_info = [
+                    ft.Text(f"Nome: {ficha['nome']}"),
+                    ft.Text(f"Classe: {ficha['classe']}"),
+                    ft.Text(f"Nível: {ficha['nivel']}"),
+                    ft.Text(f"Inteligência: {ficha['atributos']['inteligência']}"),
+                    ft.Text(f"Vigor: {ficha['atributos']['vigor']}"),
+                    ft.Text(f"Carisma: {ficha['atributos']['carisma']}"),
+                    ft.Text(f"Destreza: {ficha['atributos']['destreza']}"),
+                    ft.Text(f"Aparência: {ficha['atributos']['aparência']}"),
+                    ft.Text(f"Força: {ficha['atributos']['força']}"),
+                    ft.Text(f"Habilidades: {', '.join(ficha['habilidades'])}")
+                ]
+
+                # Criar a lista com as informações de cada ficha
                 lista.controls.append(
-                    ft.ListTile(
-                        title=ft.Text(ficha["nome"]),
-                        subtitle=ft.Text(f'Classe: {ficha["classe"]}, Nível: {ficha["nivel"]}'),
-                        trailing=ft.Row(
-                            [
-                                ft.IconButton(
-                                    icon=ft.icons.EDIT,
-                                    tooltip="Editar",
-                                    on_click=lambda e, ficha=ficha: abrir_formulario(ficha),
-                                ),
-                                ft.IconButton(
-                                    icon=ft.icons.DELETE,
-                                    tooltip="Excluir",
-                                    on_click=lambda e, nome=ficha["nome"]: excluir_ficha(nome),
-                                ),
-                            ]
-                        ),
+                    ft.Column(
+                        ficha_info + [
+                            ft.Row(
+                                [
+                                    ft.IconButton(
+                                        icon=ft.icons.EDIT,
+                                        tooltip="Editar",
+                                        on_click=lambda e, ficha=ficha: abrir_formulario(ficha),
+                                    ),
+                                    ft.IconButton(
+                                        icon=ft.icons.DELETE,
+                                        tooltip="Excluir",
+                                        on_click=lambda e, nome=ficha["nome"]: excluir_ficha(nome),
+                                    ),
+                                ]
+                            )
+                        ]
                     )
                 )
             page.update()

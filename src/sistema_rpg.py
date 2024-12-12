@@ -85,6 +85,22 @@ class SistemaRPG:
                 input_aparencia.value = str(ficha["atributos"]["aparência"])
                 input_forca.value = str(ficha["atributos"]["força"])
                 input_habilidades.value = ",".join(ficha["habilidades"])
+                #nova_ficha = {
+                #    "nome": input_nome.value,
+                #    "classe": input_classe.value,
+                #    "nivel": int(input_nivel.value),
+                #    "atributos": {
+                #        "inteligência": int(input_inteligencia.value),
+                #        "vigor": int(input_vigor.value),
+                #        "carisma": int(input_carisma.value),
+                #        "destreza": int(input_destreza.value),
+                #        "aparência": int(input_aparencia.value),
+                #        "força": int(input_forca.value),
+                #        },
+                #        "habilidades": input_habilidades.value.split(","),
+                #        }
+                #self.database.adicionar_ficha(nova_ficha.to_dict())
+                #self.database.remover_ficha(ficha)
             else:
                 limpar_formulario()
 

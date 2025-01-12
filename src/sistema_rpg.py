@@ -21,8 +21,8 @@ class SistemaRPG:
                     ft.Text(f"Nível: {ficha['nivel']}"),
                     ft.Text(f"Inteligência: {ficha['atributos']['inteligência']}"),
                     ft.Text(f"Vigor: {ficha['atributos']['vigor']}"),
-                    ft.Text(f"Carisma: {ficha['atributos']['carisma']}"),
-                    ft.Text(f"Destreza: {ficha['atributos']['destreza']}"),
+                    ft.Text(f"daoridade: {ficha['atributos']['daoridade']}"),
+                    ft.Text(f"rapidez: {ficha['atributos']['rapidez']}"),
                     ft.Text(f"Aparência: {ficha['atributos']['aparência']}"),
                     ft.Text(f"Força: {ficha['atributos']['força']}"),
                     ft.Text(f"Habilidades: {', '.join(ficha['habilidades'])}")
@@ -59,8 +59,8 @@ class SistemaRPG:
                 atributos={
                     "inteligência": int(input_inteligencia.value),
                     "vigor": int(input_vigor.value),
-                    "carisma": int(input_carisma.value),
-                    "destreza": int(input_destreza.value),
+                    "daoridade": int(input_daoridade.value),
+                    "rapidez": int(input_rapidez.value),
                     "aparência": int(input_aparencia.value),
                     "força": int(input_forca.value),
                 },
@@ -80,8 +80,8 @@ class SistemaRPG:
                 input_nivel.value = str(ficha["nivel"])
                 input_inteligencia.value = str(ficha["atributos"]["inteligência"])
                 input_vigor.value = str(ficha["atributos"]["vigor"])
-                input_carisma.value = str(ficha["atributos"]["carisma"])
-                input_destreza.value = str(ficha["atributos"]["destreza"])
+                input_daoridade.value = str(ficha["atributos"]["daoridade"])
+                input_rapidez.value = str(ficha["atributos"]["rapidez"])
                 input_aparencia.value = str(ficha["atributos"]["aparência"])
                 input_forca.value = str(ficha["atributos"]["força"])
                 input_habilidades.value = ",".join(ficha["habilidades"])
@@ -92,8 +92,8 @@ class SistemaRPG:
                 #    "atributos": {
                 #        "inteligência": int(input_inteligencia.value),
                 #        "vigor": int(input_vigor.value),
-                #        "carisma": int(input_carisma.value),
-                #        "destreza": int(input_destreza.value),
+                #        "daoridade": int(input_daoridade.value),
+                #        "rapidez": int(input_rapidez.value),
                 #        "aparência": int(input_aparencia.value),
                 #        "força": int(input_forca.value),
                 #        },
@@ -117,8 +117,8 @@ class SistemaRPG:
             input_nivel.value = "1"
             input_inteligencia.value = "0"
             input_vigor.value = "0"
-            input_carisma.value = "0"
-            input_destreza.value = "0"
+            input_daoridade.value = "0"
+            input_rapidez.value = "0"
             input_aparencia.value = "0"
             input_forca.value = "0"
             input_habilidades.value = ""
@@ -130,8 +130,8 @@ class SistemaRPG:
         input_nivel = ft.TextField(label="Nível", value="1", keyboard_type=ft.KeyboardType.NUMBER)
         input_inteligencia = ft.TextField(label="Inteligência", value="0", keyboard_type=ft.KeyboardType.NUMBER)
         input_vigor = ft.TextField(label="Vigor", value="0", keyboard_type=ft.KeyboardType.NUMBER)
-        input_carisma = ft.TextField(label="Carisma", value="0", keyboard_type=ft.KeyboardType.NUMBER)
-        input_destreza = ft.TextField(label="Destreza", value="0", keyboard_type=ft.KeyboardType.NUMBER)
+        input_daoridade = ft.TextField(label="daoridade", value="0", keyboard_type=ft.KeyboardType.NUMBER)
+        input_rapidez = ft.TextField(label="rapidez", value="0", keyboard_type=ft.KeyboardType.NUMBER)
         input_aparencia = ft.TextField(label="Aparência", value="0", keyboard_type=ft.KeyboardType.NUMBER)
         input_forca = ft.TextField(label="Força", value="0", keyboard_type=ft.KeyboardType.NUMBER)
         input_habilidades = ft.TextField(label="Habilidades (separadas por vírgula)")
@@ -143,8 +143,8 @@ class SistemaRPG:
                 input_nivel,
                 input_inteligencia,
                 input_vigor,
-                input_carisma,
-                input_destreza,
+                input_daoridade,
+                input_rapidez,
                 input_aparencia,
                 input_forca,
                 input_habilidades,

@@ -1,18 +1,1 @@
-[
-    {
-        "nome": "a",
-        "classe": "a",
-        "nivel": 1,
-        "atributos": {
-            "intelig\u00eancia": 0,
-            "vigor": 0,
-            "carisma": 0,
-            "destreza": 0,
-            "apar\u00eancia": 0,
-            "for\u00e7a": 0
-        },
-        "habilidades": [
-            ""
-        ]
-    }
-]
+[]

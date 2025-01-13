@@ -1,30 +1,43 @@
-import json
+import pandas as pd
 import os
 
 class Database:
-    def __init__(self, arquivo_banco="../data/fichas.json"):
-        self.arquivo_banco = arquivo_banco
-        self.fichas = []
-        self.carregar_fichas()
+    def __init__(self, arquivo='../data/database.json'):
+        self.arquivo = arquivo
+        if not os.path.exists(self.arquivo):
+            pd.DataFrame().to_json(self.arquivo, orient="records", indent=4)
 
     def carregar_fichas(self):
-        if os.path.exists(self.arquivo_banco):
-            with open(self.arquivo_banco, "r") as f:
-                self.fichas = json.load(f)
-        else:
-            self.fichas = []
+        try:
+            return pd.read_json(self.arquivo, orient="records")
+        except ValueError:
+            return pd.DataFrame()
 
-    def salvar_fichas(self):
-        with open(self.arquivo_banco, "w") as f:
-            json.dump(self.fichas, f, indent=4)
+    def salvar_fichas(self, df):
+        df.to_json(self.arquivo, orient="records", indent=4)
 
     def listar_fichas(self):
-        return self.fichas
+        return self.carregar_fichas().to_dict(orient="records")
 
     def adicionar_ficha(self, ficha):
-        self.fichas.append(ficha)
-        self.salvar_fichas()
+        df = self.carregar_fichas()
+        nova_ficha = pd.DataFrame([ficha])
+        df = pd.concat([df, nova_ficha], ignore_index=True)
+        self.salvar_fichas(df)
 
-    def remover_ficha(self, nome):
-        self.fichas = [ficha for ficha in self.fichas if ficha["nome"] != nome]
-        self.salvar_fichas()
+    def editar_ficha(self, nome, novos_dados):
+        df = self.carregar_fichas()
+        if nome in df["nome"].values:
+            for chave, valor in novos_dados.items():
+                df.loc[df["nome"] == nome, chave] = valor
+            self.salvar_fichas(df)
+        else:
+            raise ValueError(f"Ficha com o nome '{nome}' não encontrada.")
+
+    def excluir_ficha(self, nome):
+        df = self.carregar_fichas()
+        if nome in df["nome"].values:
+            df = df[df["nome"] != nome]
+            self.salvar_fichas(df)
+        else:
+            raise ValueError(f"Ficha com o nome '{nome}' não encontrada.")

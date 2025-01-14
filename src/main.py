@@ -48,6 +48,7 @@ def main(page: ft.Page):
         detalhes_text.controls.append(ft.Text(f"Vida Rolada: {ficha['vida_rolada']}"))
         detalhes_text.controls.append(ft.Text(f"Vida: {ficha['vida']}"))
         detalhes_text.controls.append(ft.Text(f"Defesa Natural (DN): {ficha['dn']}"))
+        detalhes_text.controls.append(ft.Text(f"Proficiências: {ficha['proficiencias']}"))
 
         voltar_button = ft.ElevatedButton("Voltar", on_click=lambda e: voltar())
         detalhes_view = ft.Column(controls=[detalhes_text, voltar_button])

@@ -1,56 +1,17 @@
 {
     "fichas": [
         {
-            "id": "718ec688-394f-446f-8c84-06b285f61875",
-            "nome": "a",
-            "classe": "Lenhador",
-            "nivel": 7,
-            "atributos": [
-                {
-                    "nome": "Forca",
-                    "valor": 5
-                },
-                {
-                    "nome": "Inteligencia",
-                    "valor": 0
-                },
-                {
-                    "nome": "Rapidez",
-                    "valor": 0
-                },
-                {
-                    "nome": "Vigor",
-                    "valor": 6
-                },
-                {
-                    "nome": "Aparencia",
-                    "valor": -3
-                },
-                {
-                    "nome": "Daoridade",
-                    "valor": 0
-                }
-            ],
-            "vida_rolada": 31,
-            "vida": 73,
-            "dn": 12,
-            "proficiencias": [
-                "Vigor",
-                "For\u00e7a"
-            ]
-        },
-        {
-            "id": "5e590f91-e3d4-45bc-b2b0-fd2b1a9a7273",
+            "id": "738a8e60-b3ad-4e7b-8418-aa5f885c3d73",
             "nome": "Beatriz",
             "classe": "Atleta",
             "nivel": 5,
             "atributos": [
                 {
-                    "nome": "For\u00e7a",
+                    "nome": "Forca",
                     "valor": 2
                 },
                 {
-                    "nome": "Intelig\u00eancia",
+                    "nome": "Inteligencia",
                     "valor": 0
                 },
                 {
@@ -62,7 +23,7 @@
                     "valor": 5
                 },
                 {
-                    "nome": "Apar\u00eancia",
+                    "nome": "Aparencia",
                     "valor": -2
                 },
                 {
@@ -75,6 +36,84 @@
             "dn": 10,
             "proficiencias": [
                 "Rapidez e Vigor"
+            ]
+        },
+        {
+            "id": "da29db69-20c8-4886-bf33-1a77e039f489",
+            "nome": "Josh",
+            "classe": "Lenhador",
+            "nivel": 5,
+            "atributos": [
+                {
+                    "nome": "For\u00e7a",
+                    "valor": 5
+                },
+                {
+                    "nome": "Intelig\u00eancia",
+                    "valor": -4
+                },
+                {
+                    "nome": "Rapidez",
+                    "valor": 0
+                },
+                {
+                    "nome": "Vigor",
+                    "valor": 6
+                },
+                {
+                    "nome": "Apar\u00eancia",
+                    "valor": 0
+                },
+                {
+                    "nome": "Daoridade",
+                    "valor": 0
+                }
+            ],
+            "vida_rolada": 30,
+            "vida": 60,
+            "dn": 12,
+            "proficiencias": [
+                "Vigor",
+                "For\u00e7a"
+            ]
+        },
+        {
+            "id": "c92925b1-5acc-4e45-8014-0c582e3cac32",
+            "nome": "Joshua",
+            "classe": "Investigador",
+            "nivel": 5,
+            "atributos": [
+                {
+                    "nome": "For\u00e7a",
+                    "valor": -4
+                },
+                {
+                    "nome": "Intelig\u00eancia",
+                    "valor": 5
+                },
+                {
+                    "nome": "Rapidez",
+                    "valor": 0
+                },
+                {
+                    "nome": "Vigor",
+                    "valor": 0
+                },
+                {
+                    "nome": "Apar\u00eancia",
+                    "valor": 6
+                },
+                {
+                    "nome": "Daoridade",
+                    "valor": 0
+                }
+            ],
+            "vida_rolada": 25,
+            "vida": 25,
+            "dn": 6,
+            "proficiencias": [
+                "Apar\u00eancia",
+                "Intelig\u00eancia"
             ]
         }
     ]

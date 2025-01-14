@@ -1,10 +1,10 @@
 from classes.InterfaceClasses import InterfaceClasses
 
 class PopStar(InterfaceClasses):
-    def calcularVida(self, vigorBonus, vida_rolada):
-        if vigorBonus > 0:
-            return vida_rolada + vigorBonus
-        return vida_rolada
+    def __init__(self):
+        self.nome="Pop Star"
+    def calcularVida(self, vigorBonus, vida_rolada, nivel):
+        return vida_rolada + (vigorBonus * nivel) if vigorBonus > 0 else vida_rolada
 
     def calcularDN(self, daoridadeBonus):
         return daoridadeBonus + 6

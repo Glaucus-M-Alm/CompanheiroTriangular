@@ -1,0 +1,43 @@
+{
+    "fichas": [
+        {
+            "id": "98774165-19eb-4c27-b628-ff235fad8f90",
+            "nome": "a",
+            "classe": "Lenhador",
+            "nivel": 6,
+            "atributos": [
+                {
+                    "nome": "Forca",
+                    "valor": 5
+                },
+                {
+                    "nome": "Inteligencia",
+                    "valor": 0
+                },
+                {
+                    "nome": "Rapidez",
+                    "valor": 0
+                },
+                {
+                    "nome": "Vigor",
+                    "valor": 6
+                },
+                {
+                    "nome": "Aparencia",
+                    "valor": -3
+                },
+                {
+                    "nome": "Daoridade",
+                    "valor": 0
+                }
+            ],
+            "vida_rolada": 25,
+            "vida": 61,
+            "dn": 12,
+            "proficiencias": [
+                "Vigor",
+                "For\u00e7a"
+            ]
+        }
+    ]
+}

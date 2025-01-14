@@ -1,8 +1,9 @@
 from classes.InterfaceClasses import InterfaceClasses
 
-class Riquinho(InterfaceClasses):
+class AtletaForca(InterfaceClasses):
     def __init__(self):
-        self.nome="Riquinho"
+        self.nome="Atleta"
+
     def calcularVida(self, vigorBonus, vida_rolada, nivel):
         return vida_rolada + (vigorBonus * nivel) if vigorBonus > 0 else vida_rolada
 
@@ -10,4 +11,4 @@ class Riquinho(InterfaceClasses):
         return rapidezBonus + 6
 
     def definirProficiencias(self):
-        return ["aparência", "vigor"]
+        return ["Rapidez e Força"]

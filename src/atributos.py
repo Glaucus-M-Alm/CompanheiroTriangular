@@ -1,4 +1,7 @@
 class Atributo:
+    VALOR_MIN = -4
+    VALOR_MAX = 6
+
     def __init__(self, nome, valor=0):
         self.__nome = nome
         self.__valor = 0
@@ -27,15 +30,28 @@ class Atributo:
 
     # Método setter para valor com validação
     def setValor(self, valor):
-        if -4 <= valor <= 6:
+        if self.VALOR_MIN <= valor <= self.VALOR_MAX:
             self.__valor = valor
         else:
-            raise ValueError(f"O valor do atributo '{self.__nome}' deve estar entre -4 e 6.")
+            raise ValueError(f"O valor do atributo '{self.__nome}' deve estar entre {self.VALOR_MIN} e {self.VALOR_MAX}.")
 
-    # Método getter para valor (opcional, mas incluído para consistência)
+    # Método getter para valor
     def getValor(self):
         return self.__valor
 
     # Representação em string
     def __str__(self):
         return f"{self.__nome}: {self.__valor}"
+
+    # Representação para depuração
+    def __repr__(self):
+        return f"Atributo(nome='{self.__nome}', valor={self.__valor})"
+
+    # Serialização para dicionário
+    def to_dict(self):
+        return {"nome": self.__nome, "valor": self.__valor}
+
+    # Desserialização de dicionário
+    @staticmethod
+    def from_dict(data):
+        return Atributo(data["nome"], data["valor"])

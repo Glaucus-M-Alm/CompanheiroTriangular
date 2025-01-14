@@ -1,82 +1,39 @@
-[
-    {
-        "nome":"a",
-        "classe":{
-
+{
+    "id": "6c28b3ee-8b33-48a5-8601-dc22cdf1ef6a",
+    "nome": "a",
+    "classe": "Lenhador",
+    "nivel": 1,
+    "atributos": [
+        {
+            "nome": "For\u00e7a",
+            "valor": 5
         },
-        "nivel":1,
-        "atributos":[
-            {
-                "nome":"Forca",
-                "valor":0
-            },
-            {
-                "nome":"Inteligencia",
-                "valor":0
-            },
-            {
-                "nome":"Rapidez",
-                "valor":0
-            },
-            {
-                "nome":"Vigor",
-                "valor":0
-            },
-            {
-                "nome":"Aparencia",
-                "valor":0
-            },
-            {
-                "nome":"Daoridade",
-                "valor":0
-            }
-        ],
-        "proficiencias":[
-            "Vigor",
-            "For\u00e7a"
-        ],
-        "vida_rolada":20,
-        "vida":20,
-        "dn":6
-    },
-    {
-        "nome":"A",
-        "classe":{
-
+        {
+            "nome": "Intelig\u00eancia",
+            "valor": 0
         },
-        "nivel":4,
-        "atributos":[
-            {
-                "nome":"Forca",
-                "valor":5
-            },
-            {
-                "nome":"Inteligencia",
-                "valor":-4
-            },
-            {
-                "nome":"Rapidez",
-                "valor":0
-            },
-            {
-                "nome":"Vigor",
-                "valor":6
-            },
-            {
-                "nome":"Aparencia",
-                "valor":0
-            },
-            {
-                "nome":"Daoridade",
-                "valor":0
-            }
-        ],
-        "proficiencias":[
-            "Vigor",
-            "For\u00e7a"
-        ],
-        "vida_rolada":20,
-        "vida":44,
-        "dn":6
-    }
-]
+        {
+            "nome": "Rapidez",
+            "valor": 0
+        },
+        {
+            "nome": "Vigor",
+            "valor": 5
+        },
+        {
+            "nome": "Apar\u00eancia",
+            "valor": 0
+        },
+        {
+            "nome": "Daoridade",
+            "valor": -3
+        }
+    ],
+    "vida_rolada": 10,
+    "vida": 15,
+    "dn": 11,
+    "proficiencias": [
+        "Vigor",
+        "For\u00e7a"
+    ]
+}

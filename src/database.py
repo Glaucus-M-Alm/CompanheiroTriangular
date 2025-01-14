@@ -2,7 +2,7 @@ import json
 import os
 
 class Database:
-    def __init__(self, arquivo="fichas.json"):
+    def __init__(self, arquivo="../data/database.json"):
         self.arquivo = arquivo
 
     def carregar_fichas(self):
